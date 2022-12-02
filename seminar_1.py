@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 
 # task_1
 '''
@@ -24,4 +27,12 @@ with open('File_txt.txt', 'w') as text_file:
     text_file.write('Ushanov Nikita, PUOR22-2m \n')
 
 with open('File_txt.txt', 'a') as text_file:
-    text_file.write(arr = list(range(0, 40, 2))
+    text_file.write(arr = "; ".join(map(str, list(range(0, 100, 2)))))
+ 
+
+# task_3
+'''
+Напишите функцию read_last(lines, file), которая будет открывать определенный файл file и выводить на печать
+построчно последние строки в количестве lines (на всякий случай проверим, что задано положительное целое число).
+'''
+
